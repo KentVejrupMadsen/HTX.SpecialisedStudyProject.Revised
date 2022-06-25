@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace SSPApplication
+namespace SSPApplication.Interaction
 {
     internal class InteractiveConsole
     {
