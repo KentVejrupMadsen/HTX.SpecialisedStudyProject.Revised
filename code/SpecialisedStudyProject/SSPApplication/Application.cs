@@ -32,8 +32,43 @@ namespace SSPApplication
         private string[] arguments = null;
 
         private CommandParser argumentParser = null;
+        private bool continueApplication = false;
+
+        private static Application applicationFramework = null;
+
 
         // Accessors
+        public static Application ApplicationFramework
+        {
+            get
+            {
+                if( Application.applicationFramework == null )
+                {
+                    Application.applicationFramework = new Application();
+                }
+
+                return Application.applicationFramework;
+            }
+            set
+            {
+                Application.applicationFramework = value;
+            }
+        }
+
+        public bool ContinueApplication
+        {
+            get
+            {
+                return this.continueApplication;
+            }
+
+            set
+            {
+                this.continueApplication = value;
+            }
+        }
+
+
         public String[] Arguments
         {
             get

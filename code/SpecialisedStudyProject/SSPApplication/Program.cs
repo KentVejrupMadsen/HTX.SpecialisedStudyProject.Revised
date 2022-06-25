@@ -13,7 +13,9 @@ namespace SSPApplication
         public static void Main( String[] arguments )
         {
             Application app = new Application( arguments );
-            app.run();
+            Application.ApplicationFramework = app;
+
+            Application.ApplicationFramework.run();
         }
     }
 }
