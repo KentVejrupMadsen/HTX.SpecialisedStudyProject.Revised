@@ -1,0 +1,10 @@
+# file extensions to filter
+*.sln
+*.csproj
+
+# directories to filter
+.vs
+
+bin*
+obj*
+Properties*

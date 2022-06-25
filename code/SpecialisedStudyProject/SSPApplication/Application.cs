@@ -25,16 +25,16 @@ namespace SSPApplication
 
         public Application( String[] args )
         {
-
+            this.ArgumentParser.parseLines( args );
         }
 
         // Variables
-        private string[] arguments = null;
+        private string[] arguments;
 
-        private CommandParser argumentParser = null;
+        private CommandParser argumentParser;
         private bool continueApplication = false;
 
-        private static Application applicationFramework = null;
+        private static Application applicationFramework;
 
 
         // Accessors
