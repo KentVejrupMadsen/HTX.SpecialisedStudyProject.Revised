@@ -12,15 +12,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SSPApplication
+
+namespace SSPApplication.Interfaces
 {
-    internal class CommandIntrepeter
+    interface ISystemCommandMultithreaded
     {
-        public CommandIntrepeter()
-        {
-
-        }
-
+        /**
+         * 
+         */
+        public abstract bool IsMultithreadeble();
 
     }
 }

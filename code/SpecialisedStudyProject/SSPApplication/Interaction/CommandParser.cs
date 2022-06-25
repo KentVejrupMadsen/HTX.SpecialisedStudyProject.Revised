@@ -13,13 +13,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace SSPApplication
+namespace SSPApplication.Interaction
 {
     internal class CommandParser
     {
         public struct Option
         {
-            public Option( string key, string[] value )
+            public Option(string key, string[] value)
             {
                 Key = key;
                 Value = value;
@@ -41,39 +41,39 @@ namespace SSPApplication
 
         }
 
-        public CommandParser( String[] args )
+        public CommandParser(string[] args)
         {
 
         }
 
         private string command;
-        
+
         private CommandIntrepeter intrepeter;
 
         public CommandIntrepeter Interpeter
         {
             get
             {
-                if( intrepeter == null )
+                if (intrepeter == null)
                 {
                     intrepeter = new CommandIntrepeter();
                 }
 
-                return this.intrepeter;
+                return intrepeter;
             }
 
             set
             {
-                this.intrepeter = value;
+                intrepeter = value;
             }
         }
 
-        public void parseLines( String[] arguments )
+        public void parseLines(string[] arguments)
         {
 
         }
 
-        public void parseLine( String argument )
+        public void parseLine(string argument)
         {
 
         }
